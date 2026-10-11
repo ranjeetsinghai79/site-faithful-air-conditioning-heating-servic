@@ -1,87 +1,169 @@
 import type { SiteConfig } from "@core/web/types"
 
-// Placeholder only — pipeline/src/agents/config-generator.ts overwrites this
-// file entirely with real business data at build time. This fallback exists
-// so `npm run dev:generic-business` renders something sane, and so any
-// business type not covered by a niche-specific template (see
-// pipeline/src/agents/builder.ts's NICHE_TEMPLATE_DIR) still gets a real,
-// working site instead of a failed build.
 export const config: SiteConfig = {
   business: {
-    city: "Tracy",
+    name: "FaithFul Air-Conditioning & Heating Services",
+    tagline: "Reliable comfort. Professional HVAC service.",
+    phone: "(909) 609-5919",
+    phoneHref: "tel:+19096095919",
+    email: "",
+    address: "8287 Palms Ave, Fontana, CA 92335, USA",
+    city: "Fontana",
+    serviceAreas: ["Fontana"],
+    license: "",
+    since: "day one",
+    google_rating: "5",
+    review_count: "5",
+    emergency: true,
     theme: "clean",
     niche: "hvac",
-    name: "Your Business Name",
-    tagline: "Local, Trusted, Reliable.",
-    phone: "(555) 654-0789",
-    phoneHref: "tel:+15556540789",
-    email: "hello@yourbusiness.com",
-    address: "Tracy, California",
-    serviceAreas: ["Tracy", "Mountain House", "Manteca", "Stockton", "Brentwood", "Lathrop"],
-    since: "2015",
-    google_rating: "4.9",
-    review_count: "120",
-    emergency: false,
-    social: {
-      google: "https://google.com",
-      yelp: "https://yelp.com",
-      instagram: "https://instagram.com",
-      facebook: "https://facebook.com",
-    },
-  },
-
-  about: {
-    heading: "Local Service You Can Actually Trust",
-    body: "We're a locally owned business serving the community with honest work, fair pricing, and a team that shows up when they say they will.",
-    highlights: [
-      { icon: "star",        text: "Locally owned and operated" },
-      { icon: "shield-check", text: "Licensed, insured, background-checked team" },
-      { icon: "clock",       text: "Fast response, clear communication" },
-    ],
+    hours: "Open 24 hours, 7 days a week",
+    googleMapsUri: "https://maps.google.com/?cid=1084036285180618513",
+    galleryCount: 6,
+    googlePlaceId: "ChIJ7SnWtzBLw4ARESfTBUJFCw8",
+    aiConfigId: "14fe39fe-fba3-484e-8bd1-7310de2a815c",
   },
 
   services: [
-    { icon: "check",  image: "/service-1.jpg", title: "Service One",   desc: "A short, clear description of the first thing this business does for its customers.", urgent: false },
-    { icon: "check",  image: "/service-2.jpg", title: "Service Two",   desc: "A short, clear description of the second thing this business does for its customers.", urgent: false },
-    { icon: "check",  image: "/service-3.jpg", title: "Service Three", desc: "A short, clear description of the third thing this business does for its customers.", urgent: false },
-    { icon: "check",  image: "/service-4.jpg", title: "Service Four",  desc: "A short, clear description of the fourth thing this business does for its customers.", urgent: false },
+    { 
+      icon: "thermometer", 
+      title: "Central Air Conditioning Installation", 
+      desc: "Complete cooling system setups designed for optimal home comfort.", 
+      urgent: false 
+    },
+    { 
+      icon: "zap", 
+      title: "Emergency AC Repair", 
+      desc: "Around-the-clock troubleshooting to get your cooling back online.", 
+      urgent: true 
+    },
+    { 
+      icon: "flame", 
+      title: "Furnace Repair and Maintenance", 
+      desc: "Thorough inspections and fixes to keep your heating reliable.", 
+      urgent: false 
+    },
+    { 
+      icon: "home", 
+      title: "Ductless Mini-Split Installation", 
+      desc: "Targeted climate control for specific rooms without ductwork.", 
+      urgent: false 
+    },
+    { 
+      icon: "wrench", 
+      title: "Heat Pump Replacement", 
+      desc: "Efficient heating and cooling upgrades for year-round performance.", 
+      urgent: false 
+    },
+    { 
+      icon: "shield-check", 
+      title: "Air Duct Repair and Sealing", 
+      desc: "Restoring proper airflow and improving your indoor air quality.", 
+      urgent: false 
+    }
   ],
 
   testimonials: [
-    { name: "Jamie R.",  location: "Tracy, CA",         stars: 5, avatar: "https://i.pravatar.cc/80?u=jamie_generic", text: "Great experience from start to finish. Showed up on time and did exactly what they said they would." },
-    { name: "Morgan T.", location: "Mountain House, CA", stars: 5, avatar: "https://i.pravatar.cc/80?u=morgan_generic", text: "Clear pricing, no surprises, and the work held up. Would use them again." },
-    { name: "Sam K.",    location: "Manteca, CA",        stars: 5, avatar: "https://i.pravatar.cc/80?u=sam_generic", text: "Responsive and professional. Exactly what you want from a local business." },
-  ],
+    {
+        "name": "Mario Vela",
+        "location": "Google review · 3 months ago",
+        "stars": 5,
+        "text": "I highly recommend Vincent Godoy for any HVAC or air conditioning work. This is actually the second time I’ve used him. He completed a repair for me about two years ago, and I’ve had absolutely no issues with that work since. That alone gave me confidence to call him again. …"
+    },
+    {
+        "name": "ProTint",
+        "location": "Google review · 4 months ago",
+        "stars": 5,
+        "text": "… Overall, I got a great deal, met a great person, and found an honest businessman. Hats off to you, Vince. You are an impressive, honest young man, and I wish you all the success in the world."
+    },
+    {
+        "name": "Toni Tautolo",
+        "location": "Google review · 4 months ago",
+        "stars": 5,
+        "text": "Vincent was to my home last year. He was very honest and did not do what did not need to. I called this past Wednesday for a year check up. So this was his second time to our home. He took before, and after pictures of everything he found. We trust him really appreciate his advice!"
+    },
+    {
+        "name": "Joel Tramble",
+        "location": "Google review · 3 months ago",
+        "stars": 5,
+        "text": "Excellent service very professional and clear on details. Highly recommended🤩"
+    },
+    {
+        "name": "Neifa Cosenza",
+        "location": "Google review · 2 months ago",
+        "stars": 5,
+        "text": ""
+    }
+],
 
-  trustBadges: [
-    "Locally Owned",
-    "Licensed & Insured",
-    "Fast Response",
-    "5-Star Rated",
-  ],
+  trustBadges: ["Open 24 hours", "5.0 on Google", "Based in Fontana"],
 
   stats: [
-    { value: 4.9, label: "Google Rating",  suffix: "★", decimals: 1 },
-    { value: 120, label: "Happy Customers", suffix: "+", decimals: 0 },
-    { value: 10,  label: "Years in Business", suffix: "+", decimals: 0 },
+    { value: 5, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 5, label: "Verified Reviews", suffix: "", decimals: 0 },
+    { value: 1, label: "Service Area", suffix: "", decimals: 0 }
   ],
 
   reasons: [
-    { icon: "award",        title: "Locally Owned",   desc: "We live and work in this community — our reputation depends on doing it right." },
-    { icon: "shield-check", title: "Fully Insured",   desc: "Licensed and insured so you're protected at every step." },
-    { icon: "star",         title: "5-Star Service",  desc: "Consistent, reliable work that keeps customers coming back." },
-    { icon: "users",        title: "Our Own Team",    desc: "No subcontractors — the people who show up are the people you hired." },
+    { icon: "clock", title: "Open 24 hours", desc: "Google lists us open around the clock, every day of the week." },
+    { icon: "phone", title: "Call a real person", desc: "Reach the team directly at (909) 609-5919." },
+    { icon: "star", title: "Rated 5.0 on Google", desc: "Our neighbors in Fontana rate us five stars." }
+  ],
+
+  about: {
+    heading: "Reliable HVAC care in Fontana.",
+    body: "FaithFul Air-Conditioning & Heating Services provides professional heating and cooling solutions to the Fontana community. We are available 24 hours a day to ensure your home stays comfortable year-round.",
+    highlights: [
+      { icon: "star", text: "Available 24/7" },
+      { icon: "home", text: "Locally based in Fontana" }
+    ]
+  },
+
+  process: [
+    { 
+      title: "Tell us what you need", 
+      desc: "Reach out to discuss your heating or cooling issue." 
+    },
+    { 
+      title: "We evaluate the system", 
+      desc: "We look at your equipment and explain the options." 
+    },
+    { 
+      title: "We restore your comfort", 
+      desc: "We complete the necessary repairs or installation efficiently." 
+    }
   ],
 
   faq: [
-    { q: "Do you offer free quotes?", a: "Yes — reach out and we'll get you a straight quote, no obligation." },
-    { q: "What areas do you serve?", a: "We serve the local area and surrounding communities — check the service area list above." },
-    { q: "How fast can you respond?", a: "We aim to respond the same day for most requests." },
+    { 
+      q: "Do you offer emergency HVAC services?", 
+      a: "Yes, we are open 24 hours a day to handle urgent heating and cooling issues in Fontana." 
+    },
+    { 
+      q: "How do I get a quote?", 
+      a: "Call us at (909) 609-5919 and we will talk through your system and the next steps." 
+    },
+    { 
+      q: "What areas do you serve?", 
+      a: "We proudly provide air conditioning and heating services throughout Fontana, CA." 
+    },
+    { 
+      q: "How do I schedule an appointment?", 
+      a: "You can call us directly at (909) 609-5919 to book a service visit at your convenience." 
+    }
   ],
 
   formServiceOptions: [
-    "General Inquiry",
-    "Request a Quote",
-    "Schedule Service",
-  ],
+    "Central Air Conditioning Installation",
+    "Emergency AC Repair",
+    "Furnace Repair and Maintenance",
+    "Ductless Mini-Split Installation",
+    "Heat Pump Replacement",
+    "Air Duct Repair and Sealing"
+  ]
 }
+
+export const BUSINESS = config.business
+export const SERVICES = config.services!
+export const TESTIMONIALS = config.testimonials!
+export const TRUST_BADGES = config.trustBadges!
