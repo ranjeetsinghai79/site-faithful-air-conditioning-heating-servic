@@ -31,7 +31,7 @@ export default function Behavior() {
     const hero = document.querySelector<HTMLElement>(".hero-grid")!
     const image = document.querySelector<HTMLElement>(".hero-photo img")!
     let observer: IntersectionObserver | undefined; const targets = new Set<Element>()
-    document.querySelectorAll(".section-head,.service,.urgent,.about>div,.plan,.review,.quote>div,.quote>form,.faq-layout>div,details,.footer-grid>div,.footer-bottom,.process .eyebrow,.process h2").forEach(el => targets.add(el))
+    document.querySelectorAll(".section-head,.service,.urgent,.about>div,.plan,.reviews-grid .review,.quote>div,.quote>form,.faq-layout>div,details,.footer-grid>div,.footer-bottom,.process .eyebrow,.process h2").forEach(el => targets.add(el))
     const resetMotion = () => {
       observer?.disconnect(); document.documentElement.classList.remove("motion-ready")
       targets.forEach(el => el.classList.remove("scroll-reveal", "is-visible")); image.style.transform = ""
